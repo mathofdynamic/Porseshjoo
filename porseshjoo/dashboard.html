@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Porseshjoo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Porseshjoo</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="sign-out-link" id="signOutBtn">Sign Out</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-header-content">
+                <h2>My Question Lists</h2>
+                <a href="create.html" class="btn btn-primary">+ Create New List</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question List Grid -->
+    <main class="dashboard-main">
+        <div class="container">
+            <div class="question-list-grid" id="questionListGrid">
+                <!-- Question list cards will be dynamically generated here -->
+                <div class="question-card card">
+                    <div class="card-header">
+                        <h3 class="card-title">Weekend Plans Survey</h3>
+                        <span class="card-date">Created: Sep 17, 2025</span>
+                    </div>
+                    <div class="card-stats">
+                        <span class="response-count">15 Responses</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="results.html?id=1" class="action-link">View Results</a>
+                        <a href="#" class="action-link">Get Share Link</a>
+                        <button class="action-link delete-btn">Delete</button>
+                    </div>
+                </div>
+
+                <div class="question-card card">
+                    <div class="card-header">
+                        <h3 class="card-title">Team Feedback</h3>
+                        <span class="card-date">Created: Sep 16, 2025</span>
+                    </div>
+                    <div class="card-stats">
+                        <span class="response-count">8 Responses</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="results.html?id=2" class="action-link">View Results</a>
+                        <a href="#" class="action-link">Get Share Link</a>
+                        <button class="action-link delete-btn">Delete</button>
+                    </div>
+                </div>
+
+                <div class="question-card card">
+                    <div class="card-header">
+                        <h3 class="card-title">Movie Night Preferences</h3>
+                        <span class="card-date">Created: Sep 15, 2025</span>
+                    </div>
+                    <div class="card-stats">
+                        <span class="response-count">23 Responses</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="results.html?id=3" class="action-link">View Results</a>
+                        <a href="#" class="action-link">Get Share Link</a>
+                        <button class="action-link delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porseshjoo - Create Insightful Question Lists</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Porseshjoo</h1>
+            </div>
+            <nav class="nav">
+                <button class="btn btn-secondary" id="signInBtn">Sign In</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Create Insightful Question Lists. Effortlessly.</h2>
+                <p class="hero-description">
+                    Build custom question lists to gather feedback, conduct surveys, and spark meaningful conversations.
+                    Share with friends, family, or colleagues and get valuable insights in real-time.
+                </p>
+                <button class="btn btn-primary" id="getStartedBtn">Get Started for Free</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Authentication Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Welcome</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-social btn-google">
+                    <span class="icon">G</span>
+                    Sign In with Google
+                </button>
+                <button class="btn btn-social btn-apple">
+                    <span class="icon"></span>
+                    Sign In with Apple
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Question List - Porseshjoo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Porseshjoo</h1>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="#" class="sign-out-link" id="signOutBtn">Sign Out</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="create-main">
+        <div class="container">
+            <!-- List Title Input -->
+            <div class="title-section">
+                <input
+                    type="text"
+                    id="listTitle"
+                    class="title-input input"
+                    placeholder="Enter your question list title..."
+                    maxlength="100"
+                >
+            </div>
+
+            <!-- Control Panel -->
+            <div class="control-panel card">
+                <h3>Add Questions:</h3>
+                <div class="control-buttons">
+                    <button class="btn btn-secondary" id="addMultipleChoice">
+                        + Multiple Choice
+                    </button>
+                    <button class="btn btn-secondary" id="addOpenText">
+                        + Open Text
+                    </button>
+                    <button class="btn btn-secondary" id="addRatingScale">
+                        + Rating Scale
+                    </button>
+                </div>
+            </div>
+
+            <!-- Questions Container -->
+            <div class="questions-container" id="questionsContainer">
+                <!-- Question blocks will be dynamically added here -->
+            </div>
+
+            <!-- Save Button -->
+            <div class="save-section">
+                <button class="btn btn-primary btn-large" id="savePublishBtn">
+                    Save & Publish
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

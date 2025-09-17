@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Porseshjoo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Porseshjoo</h1>
+            </div>
+            <nav class="nav">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="#" class="sign-out-link" id="signOutBtn">Sign Out</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="results-main">
+        <div class="container">
+            <div class="results-header card">
+                <h2 id="listTitle">Question List Title</h2>
+                <div class="results-meta">
+                    <span id="responseCount">0 Responses</span>
+                    <span id="createdDate">Created: Sep 17, 2025</span>
+                </div>
+                <div class="results-actions">
+                    <button class="btn btn-secondary" id="shareLinkBtn">Get Share Link</button>
+                    <button class="btn btn-secondary" id="editListBtn">Edit List</button>
+                </div>
+            </div>
+
+            <div class="results-content" id="resultsContent">
+                <!-- Results visualization will be dynamically generated here -->
+                <div class="result-item card">
+                    <h3>Question 1: What is your favorite weekend activity?</h3>
+                    <div class="chart-container">
+                        <div class="chart-placeholder">
+                            <p>Chart visualization would appear here</p>
+                            <p>Sample data: Hiking (40%), Reading (25%), Gaming (20%), Cooking (15%)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-item card">
+                    <h3>Question 2: Any additional comments?</h3>
+                    <div class="text-responses">
+                        <div class="response-card">
+                            <p class="respondent-name">Anonymous</p>
+                            <p class="response-text">"Great survey! I love how you included all the options."</p>
+                        </div>
+                        <div class="response-card">
+                            <p class="respondent-name">Anonymous</p>
+                            <p class="response-text">"More hiking options would be nice next time."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
